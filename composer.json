@@ -1,0 +1,38 @@
+{
+    "name": "kipchak/identity",
+    "type": "library",
+    "description": "Consumer and tenant identity for the Kipchak API Development Kit (ADK): who a request is from, read from API keys, verified tokens, request attributes or headers, defined once and shared by metering and quotas.",
+    "keywords": [
+        "APIs",
+        "Microservices",
+        "Mamluk",
+        "Identity",
+        "Multi-tenancy"
+    ],
+    "homepage": "https://kipchak.dev",
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Kipchak\\Identity\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kipchak\\Identity\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.4",
+        "kipchak/driver-config": "^1",
+        "psr/http-message": "^1.1 || ^2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12",
+        "slim/psr7": "^1"
+    }
+}
